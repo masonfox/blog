@@ -44,7 +44,7 @@ body {
 }
 
 header {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 header h1 {
@@ -56,14 +56,15 @@ header h1 {
 }
 
 header p {
-  color: var(--fg4);
+  color: var(--fg3);
   font-size: 0.9em;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-weight: 300;
+  line-height: 1.6;
 }
 
 nav {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 nav a {
@@ -95,8 +96,8 @@ h1 {
 h2 {
   font-size: 1.4em;
   color: var(--orange);
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 24px;
 }
 
 h3 {
@@ -119,7 +120,7 @@ a:hover {
 }
 
 .post-item {
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .post-item:last-child {
@@ -274,11 +275,23 @@ footer a:hover {
 }
 
 .post-tags {
-  display: none;
+  margin-top: 8px;
 }
 
 .tag {
-  display: none;
+  display: inline-block;
+  background-color: var(--bg2);
+  color: var(--fg4);
+  font-size: 0.8em;
+  padding: 4px 10px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.tag:hover {
+  background-color: var(--bg3);
 }
 
 .post-header {
