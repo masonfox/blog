@@ -44,25 +44,30 @@ body {
 }
 
 header {
-  background-color: var(--bg0-hard);
-  border-bottom: 2px solid var(--orange);
-  padding: 20px 0;
+  border-left: 4px solid var(--orange);
+  padding: 20px;
   margin-bottom: 40px;
+  transition: border-left-color 0.2s ease;
+}
+
+header:hover {
+  border-left-color: var(--yellow);
 }
 
 header h1 {
   color: var(--orange);
-  font-size: 2em;
-  margin-bottom: 5px;
+  font-size: 1.8em;
+  margin-bottom: 8px;
 }
 
 header p {
   color: var(--fg3);
-  font-size: 0.9em;
+  font-size: 0.85em;
+  margin-bottom: 10px;
 }
 
 nav {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 nav a {
@@ -113,22 +118,29 @@ a:hover {
 }
 
 .post-item {
-  background-color: var(--bg1);
-  border-left: 4px solid var(--orange);
-  padding: 20px;
+  padding: 20px 0;
   margin-bottom: 20px;
-  transition: transform 0.2s ease, border-left-color 0.2s ease;
+  border-bottom: 1px solid var(--bg3);
 }
 
-.post-item:hover {
-  transform: translateX(5px);
-  border-left-color: var(--yellow);
+.post-item:last-child {
+  border-bottom: none;
 }
 
 .post-title {
+  color: var(--orange);
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+.post-title a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-title a:hover {
   color: var(--yellow);
-  font-size: 1.5em;
-  margin-bottom: 10px;
 }
 
 .post-meta {
@@ -140,13 +152,20 @@ a:hover {
 .post-excerpt {
   color: var(--fg2);
   margin-top: 10px;
+  line-height: 1.5;
 }
 
 .read-more {
   display: inline-block;
   margin-top: 10px;
   color: var(--aqua);
-  font-weight: bold;
+  font-weight: normal;
+  transition: color 0.2s ease;
+}
+
+.read-more:hover {
+  color: var(--green);
+  text-decoration: none;
 }
 
 .post-content {
@@ -253,13 +272,16 @@ footer a {
 
 .tag {
   display: inline-block;
-  background-color: var(--bg2);
-  color: var(--aqua);
-  padding: 4px 12px;
-  border-radius: 3px;
-  font-size: 0.85em;
-  margin-right: 8px;
+  color: var(--fg4);
+  font-size: 0.8em;
+  margin-right: 12px;
   margin-bottom: 8px;
+}
+
+.tag::before {
+  content: "#";
+  color: var(--aqua);
+  margin-right: 2px;
 }
 
 .post-header {
