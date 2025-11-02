@@ -1,0 +1,39 @@
+# Jekyll Configuration
+title: Mason Fox's Blog
+description: Welcome to my technical blog. I write about software development, technology, and whatever else interests me.
+author: Mason Fox
+email: hello@masonfox.net
+github_username: masonfox
+url: "https://masonfox.net"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+highlighter: rouge
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
