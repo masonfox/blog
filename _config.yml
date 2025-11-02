@@ -1,0 +1,43 @@
+# Jekyll Configuration
+title: Mason Fox's Blog
+description: A gruvbox-themed technical blog
+author: Mason Fox
+email: hello@masonfox.net
+url: "https://masonfox.net"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+highlighter: rouge
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
