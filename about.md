@@ -17,6 +17,6 @@ Hi, I'm Mason Fox! This is my personal blog where I share my thoughts and experi
 
 ## Get in Touch
 
-Feel free to reach out to me via [email](mailto:{{ site.email }}) or connect with me on [GitHub](https://github.com/{{ site.author | downcase | replace: ' ', '' }}).
+Feel free to reach out to me via [email](mailto:{{ site.email }}) or connect with me on [GitHub](https://github.com/{{ site.github_username }}).
 
 Thanks for visiting!

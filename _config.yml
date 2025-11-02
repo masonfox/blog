@@ -3,6 +3,7 @@ title: Mason Fox's Blog
 description: A gruvbox-themed technical blog
 author: Mason Fox
 email: hello@masonfox.net
+github_username: masonfox
 url: "https://masonfox.net"
 baseurl: ""
 
@@ -10,10 +11,6 @@ baseurl: ""
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 highlighter: rouge
-
-# Pagination
-paginate: 10
-paginate_path: "/page/:num/"
 
 # Exclude files
 exclude:
@@ -40,4 +37,3 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate
