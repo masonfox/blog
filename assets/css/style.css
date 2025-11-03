@@ -288,11 +288,14 @@ footer a:hover {
   margin-right: 8px;
   margin-bottom: 4px;
   border-radius: 3px;
-  transition: background-color 0.2s ease;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .tag:hover {
   background-color: var(--bg3);
+  color: var(--fg1);
+  text-decoration: none;
 }
 
 .post-header {
@@ -319,6 +322,22 @@ footer a:hover {
 
 .back-link:hover {
   color: var(--fg0);
+}
+
+.tag-page h1 {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.tag-page .post-excerpt {
+  display: block;
+}
+
+.tag-page .read-more {
+  display: inline-block;
+  color: var(--blue);
+  font-size: 0.9em;
+  margin-top: 8px;
 }
 
 /* Syntax highlighting for code blocks */

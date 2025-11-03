@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<div class="home">
-  {{ content }}
+<div class="tag-page">
+  <a href="{{ '/' | relative_url }}" class="back-link">← Back to all posts</a>
   
-  <h2>Recent Posts</h2>
+  <h1>Posts tagged with "{{ page.tag }}"</h1>
   
-  {% if site.posts.size > 0 %}
+  {% if site.tags[page.tag] %}
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.tags[page.tag] %}
     <li class="post-item">
       <h3 class="post-title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -37,6 +37,6 @@ layout: default
     {% endfor %}
   </ul>
   {% else %}
-  <p>No posts yet. Check back soon!</p>
+  <p>No posts found with this tag.</p>
   {% endif %}
 </div>
