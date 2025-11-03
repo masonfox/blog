@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Emacs Config”
+title: My Emacs Config
 date: 2025-11-02
 author: Mason Fox
 tags: [emacs, doom-emacs]
