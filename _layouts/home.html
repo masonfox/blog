@@ -18,9 +18,6 @@ layout: default
         <time datetime="{{ post.date | date_to_xmlschema }}">
           {{ post.date | date: "%B %d, %Y" }}
         </time>
-        {% if post.author %}
-        <span> • by {{ post.author }}</span>
-        {% endif %}
       </div>
       {% if post.tags %}
       <div class="post-tags">

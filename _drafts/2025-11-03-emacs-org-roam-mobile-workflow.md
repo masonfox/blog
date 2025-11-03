@@ -2,7 +2,6 @@
 layout: post
 title: Emacs & Org-roam Mobile Workflow
 date: 2025-11-02
-author: Mason Fox
 tags: [emacs, org-roam, ios-shortcuts]
 ---
 
