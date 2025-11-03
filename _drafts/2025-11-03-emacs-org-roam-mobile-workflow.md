@@ -5,11 +5,15 @@ date: 2025-11-02
 tags: [emacs, org-roam, ios-shortcuts]
 ---
 
-# The Perennial Emacs Challenge: Mobile
-While a rich desktop experience, Emacs leaves one more than wanting on mobile, especially on iOS.
+* TOC
+{:toc}
+---
 
-# My Environment
-eMacs and doom...
+# The Perennial Emacs Challenge: Mobile
+While a rich desktop experience, Emacs leaves one more than wanting on mobile, especially on iOS. Coming from Obsidian, I knew that *solving* for mobile continuity was necessary, and this post reflects that. 
+
+# My Desktop Environment
+Doom Emacs and Org-roam...
 
 # Overview
 [describe the overarching workflow]
@@ -17,8 +21,8 @@ eMacs and doom...
 # iOS Shortcuts
 A majority of my workflow depends on [iOS Shortcuts](https://apps.apple.com/us/app/shortcuts/id1462947752).
 
-## Pre-Requisite: Actions App
-The [Actions App](https://sindresorhus.com/actions) by [Sondre Sorhus](https://github.com/sindresorhus) adds a ton of new to the Shortcuts apps that are required for my shortcuts:
+**Pre-Requisites**:
+- [Actions App](https://sindresorhus.com/actions): 
+- [Working Copy](https://apps.apple.com/us/app/git-client-working-copy/id896694807): a mobile git client
 
 ## My Shortcuts
-- 
