@@ -410,6 +410,10 @@ footer a:hover {
   body {
     font-size: 14px;
   }
+
+  .post-title::before {
+    left: -23px;
+  }
   
   .container {
     padding-left: 2rem;
