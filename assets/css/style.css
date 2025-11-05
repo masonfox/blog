@@ -32,7 +32,7 @@
 body {
   font-family: 'JetBrains Mono', 'Courier New', monospace;
   background-color: var(--bg0);
-  color: var(--fg2);
+  color: var(--fg1);
   line-height: 1.8;
   font-size: 15px;
 }
@@ -40,51 +40,54 @@ body {
 .container {
   max-width: 720px;
   margin: 0 auto;
-  padding: 6rem 3rem;
 }
 
 header {
-  margin-bottom: 40px;
+  padding-top: 2rem;
+}
+
+header::after {
+  content: "";
+  display: block;
+  border-bottom: 2px dashed var(--bg1); /* Creates a dashed line */
+  width: 100%;
+  margin-top: 2rem;
 }
 
 header h1 {
   color: var(--fg0);
-  font-size: 1.2em;
-  margin-bottom: 12px;
+  font-size: 1.5em;
+  margin-bottom: 4px;
   font-weight: 400;
   letter-spacing: -0.02em;
+  font-weight: bold;
+  margin-top: 0;
 }
 
 header p {
-  color: var(--fg3);
+  color: var(--fg4);
   font-size: 0.9em;
-  margin-bottom: 16px;
+  margin-bottom: .75rem;
   font-weight: 300;
   line-height: 1.6;
 }
 
 nav {
-  margin-top: 16px;
+  margin-top: .24rem;
 }
 
 nav a {
-  color: var(--fg3);
+  color: var(--purple);
   text-decoration: none;
   margin-right: 24px;
   font-size: 0.9em;
   transition: color 0.2s ease;
 }
 
-nav a:hover {
-  color: var(--fg0);
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: var(--fg0);
   margin-top: 2em;
   margin-bottom: 0.8em;
-  font-weight: 400;
-  letter-spacing: -0.02em;
 }
 
 h1 {
@@ -96,8 +99,6 @@ h1 {
 h2 {
   font-size: 1.4em;
   color: var(--orange);
-  margin-top: 40px;
-  margin-bottom: 24px;
 }
 
 h3 {
@@ -106,12 +107,11 @@ h3 {
 }
 
 a {
-  color: var(--blue);
+  color: var(--orange);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--aqua);
   text-decoration: underline;
 }
 
@@ -130,9 +130,27 @@ a:hover {
 .post-title {
   color: var(--fg0);
   font-size: 1.1em;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: 400;
   letter-spacing: -0.01em;
+}
+
+.post-title:first-child {
+  margin-top: 0;
+}
+
+.post-title::before {
+  content: "🜂";
+  height: 1rem;
+  width: 1rem;
+  background: var(--green);
+  color: var(--bg0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .25rem;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 .post-title a {
@@ -142,7 +160,7 @@ a:hover {
 }
 
 .post-title a:hover {
-  color: var(--orange);
+  color: var(--purple);
 }
 
 .post-meta {
@@ -231,11 +249,12 @@ a:hover {
 
 footer {
   border-top: none;
-  margin-top: 100px;
-  padding: 40px 0;
+  margin-top: 5rem;
+  padding: 1rem 0;
   text-align: center;
   color: var(--fg4);
   font-size: 0.85em;
+  font-weight: 500;
 }
 
 footer a {
@@ -282,7 +301,7 @@ footer a:hover {
 .tag {
   display: inline-block;
   background-color: var(--bg2);
-  color: var(--fg4);
+  color: var(--fg3);
   font-size: 0.8em;
   padding: 4px 10px;
   margin-right: 8px;
@@ -299,7 +318,7 @@ footer a:hover {
 }
 
 .post-header {
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
   padding-bottom: 0;
   border-bottom: none;
 }
@@ -308,20 +327,36 @@ footer a:hover {
   border: none;
   margin-top: 0;
   font-size: 1.8em;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  color: var(--yellow)
 }
 
 .back-link {
-  display: inline-block;
-  margin-bottom: 30px;
-  color: var(--fg4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--fg2);
   font-weight: 300;
   font-size: 0.9em;
   text-decoration: none;
 }
 
+/* arrow unicode icon */
+.back-link span:first-child {
+  margin-right: 8px;
+  font-size: 1.2em;
+  position: relative;
+  bottom: 2px;
+}
+
 .back-link:hover {
-  color: var(--fg0);
+  color: var(--fg1);
+  text-decoration: none;
+}
+
+.back-link:hover span:nth-child(2) {
+  text-decoration: underline;
 }
 
 .tag-page h1 {
@@ -360,11 +395,8 @@ footer a:hover {
   }
   
   .container {
-    padding: 10px;
-  }
-  
-  .post-content {
-    padding: 15px;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   
   header h1 {
