@@ -10,6 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   {% seo %}
   {% feed_meta %}
+
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
 </head>
 <body>
   {% include header.html %}

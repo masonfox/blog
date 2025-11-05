@@ -7,6 +7,9 @@ github_username: masonfox
 url: "https://masonfox.net"
 baseurl: ""
 
+# Google Analytics
+google_analytics: G-2ZH5YFDHSG
+
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
