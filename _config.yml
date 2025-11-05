@@ -3,8 +3,9 @@ title: Mason Fox's Blog
 description: From barn to server
 author: Mason Fox
 email: masonfox22@gmail.com
-github_username: masonfox
-linkedin_username: masonfox
+social:
+  github: masonfox
+  linkedin: masonfox
 url: "https://masonfox.net"
 baseurl: ""
 
