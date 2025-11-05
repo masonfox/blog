@@ -2,7 +2,7 @@
 title: Mason Fox's Blog
 description: From barn to server
 author: Mason Fox
-email: hello@masonfox.net
+email: masonfox22@gmail.com
 github_username: masonfox
 url: "https://masonfox.net"
 baseurl: ""
@@ -18,6 +18,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+# Include files
+include:
+  - .well-known
 
 # Collections
 collections:
