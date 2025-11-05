@@ -16,6 +16,7 @@ Hi, I'm Mason Fox! This is my personal blog where I share my thoughts about soft
 
 ### Get in Touch
 
-Feel free to connect with me on [GitHub](https://github.com/{{ site.github_username }}).
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }}).
 
-Thanks for visiting!
+<br>
+Thanks for visiting! 👋
