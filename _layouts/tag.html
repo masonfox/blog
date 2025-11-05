@@ -5,7 +5,10 @@ layout: default
 <div class="tag-page">
   <a href="{{ '/' | relative_url }}" class="back-link">← Back to all posts</a>
   
-  <h1>Posts tagged with "{{ page.tag }}"</h1>
+  <h2 class="tag-header">
+    <span>Posts tagged with:</span>
+    <span class="tag-name">{{ page.tag }}</span>
+  </h2>
   
   {% if site.tags[page.tag] %}
   <ul class="post-list">
@@ -18,9 +21,6 @@ layout: default
         <time datetime="{{ post.date | date_to_xmlschema }}">
           {{ post.date | date: "%B %d, %Y" }}
         </time>
-        {% if post.author %}
-        <span> • by {{ post.author }}</span>
-        {% endif %}
       </div>
       {% if post.tags %}
       <div class="post-tags">
