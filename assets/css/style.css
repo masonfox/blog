@@ -299,7 +299,7 @@ footer a:hover {
 }
 
 .post-tags {
-  margin-top: 8px;
+  margin-top: .75rem;
 }
 
 .tag {
@@ -331,7 +331,7 @@ footer a:hover {
   border: none;
   margin-top: 0;
   font-size: 1.8em;
-  margin-bottom: 1rem;
+  margin-bottom: .25rem;
   color: var(--yellow)
 }
 
