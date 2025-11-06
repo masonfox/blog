@@ -4,15 +4,17 @@ layout: default
 
 <div class="tag-page">
   <a href="{{ '/' | relative_url }}" class="back-link">← Back to all posts</a>
-  
+
   <h2 class="tag-header">
     <span>Posts tagged with:</span>
-    <span class="tag-name">{{ page.tag }}</span>
+    <span class="tag-name">{{ page.title }}</span>
   </h2>
-  
-  {% if site.tags[page.tag] %}
+
+  <br>
+
+  {% if page.posts %}
   <ul class="post-list">
-    {% for post in site.tags[page.tag] %}
+    {% for post in page.posts %}
     <li class="post-item">
       <h3 class="post-title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -25,7 +27,7 @@ layout: default
       {% if post.tags %}
       <div class="post-tags">
         {% for tag in post.tags %}
-        <span class="tag">{{ tag }}</span>
+        <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a>
         {% endfor %}
       </div>
       {% endif %}
