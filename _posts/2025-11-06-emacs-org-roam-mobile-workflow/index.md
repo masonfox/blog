@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Emacs & Org-roam iOS Mobile Workflow
-date: 2025-11-02
+date: 2025-11-06
 tags: [emacs, org-roam, ios-shortcuts, pkm]
 ---
 
