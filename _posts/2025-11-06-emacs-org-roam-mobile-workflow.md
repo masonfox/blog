@@ -63,7 +63,7 @@ Lastly, this shortcut bundles your modified files into a single commit and pushe
 If you want to explore a tad further, here are some additional tips!
 
 ## Silence Notifications
-You can *conditionally* silence notifications for these shortcuts by passing in a dictionary with `notifications` set to `false`, like below.
+You can *conditionally* silence notifications for these shortcuts by passing in a dictionary with `notification` set to `false`, like below.
 
 Notifications are enabled by default.
 
@@ -81,6 +81,6 @@ I like to keep my shortcuts handy on the Home Screen, so I put it in my widgets.
 This way, they're always accessible on my home screen.
 
 ## Auto-Commit
-While I don't use it because I often feel I'm in-and-out of my writing app to frequently, you could "auto-commit" changes via a shortcut whenever your writing app closes.
+While I don't use it because I feel I'm in-and-out of my writing app frequently, you could "auto-commit" changes via a shortcut whenever your writing app closes.
 
 Just configure the "Push Note Changes" shortcut to run whenever your writing app closes via Shortcut Automations.
