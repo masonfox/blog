@@ -5,16 +5,15 @@ date: 2025-11-06
 tags: [emacs, org-roam, ios-shortcuts, pkm]
 ---
 
+**Table of Contents**
 * TOC
 {:toc}
-
----
 
 # The Perennial Emacs Challenge: Mobile
 While a rich desktop experience, Emacs leaves one more than wanting on mobile, especially on iOS. Emigrating from [Obsidian](https://obsidian.md/) to Emacs, I knew that *solving* for mobile continuity was necessary, and this post reflects that solution path.
 
 # Solution Overview
-![Workflow Diagram](workflow-diagram.png)
+![Workflow Diagram]({{ '/assets/images/emacs-org-roam-mobile-workflow/workflow-diagram.png' | relative_url }})
 
 My workflow leverages Git as a core method for syncing state between desktop and mobile. When on desktop, I use [magit](https://github.com/magit/magit) (an Emacs git client), and [Working Copy]((https://apps.apple.com/us/app/git-client-working-copy/id896694807)), an iOS git client, on mobile.
 
@@ -26,7 +25,7 @@ Additionally, leveraging the automation feature in iOS Shortcuts, I pull notes e
 
 Here's a simple example of what that looks like:
 
-![Workflow](workflow.gif)
+![Workflow]({{ '/assets/images/emacs-org-roam-mobile-workflow/workflow.gif' | relative_url }}){: width="300" }
 
 Let’s breakdown this down!
 
@@ -55,26 +54,33 @@ On top of that, I’d encourage you to setup a Shortcut Automation to run this w
 
 Lastly, this shortcut bundles your modified files into a single commit and pushes it to your remote repo.
 
-## Standard Workflow
+# Standard Workflow
 1. Open your note taking app 
 2. Make edits to your notes
 3. Run the “Push Note Changes” shortcut
 
-## Final Tips
-### Silence Notifications
+# Final Tips
+If you want to explore a tad further, here are some additional tips!
+
+## Silence Notifications
 You can *conditionally* silence notifications for these shortcuts by passing in a dictionary with `notifications` set to `false`, like below.
 
 Notifications are enabled by default.
 
 Here’s an example of my “Open App” automation:
 
-![Suppress Notifications](notifications.jpg)
+![Suppress Notifications]({{ '/assets/images/emacs-org-roam-mobile-workflow/notifications.jpg' | relative_url }}){: width="300" }
 
 I didn’t want the notification popping up every time, so I added this override.
 
-### Shortcuts Widget
+## Shortcuts Widget
 I like to keep my shortcuts handy on the Home Screen, so I put it in my widgets.
 
-![Shortcut Widgets](widgets.jpg)
+![Shortcut Widgets]({{ '/assets/images/emacs-org-roam-mobile-workflow/widgets.jpg' | relative_url }}){: width="300" }
 
 This way, they're always accessible on my home screen.
+
+## Auto-Commit
+While I don't use it because I often feel I'm in-and-out of my writing app to frequently, you could "auto-commit" changes via a shortcut whenever your writing app closes.
+
+Just configure the "Push Note Changes" shortcut to run whenever your writing app closes via Shortcut Automations.
