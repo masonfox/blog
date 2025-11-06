@@ -7,20 +7,20 @@ tags: [emacs, org-roam, ios-shortcuts, pkm]
 
 * TOC
 {:toc}
+
 ---
 
 # The Perennial Emacs Challenge: Mobile
 While a rich desktop experience, Emacs leaves one more than wanting on mobile, especially on iOS. Emigrating from [Obsidian](https://obsidian.md/) to Emacs, I knew that *solving* for mobile continuity was necessary, and this post reflects that solution path.
 
 # Solution Overview
-
 ![Workflow Diagram](workflow-diagram.png)
 
 My workflow leverages Git as a core method for syncing state between desktop and mobile. When on desktop, I use [magit](https://github.com/magit/magit) (an Emacs git client), and [Working Copy]((https://apps.apple.com/us/app/git-client-working-copy/id896694807)), an iOS git client, on mobile.
 
 With this structure, I can pull and push changes with ease, and fortunately, managing merge conflicts has been minimal.
 
-For mobile, I have a single shortcut that will stage all local changes and commit them in a single tap. 
+For mobile, I have a single shortcut that will stage all local changes and commit them in a single tap. I have a simple commit message convention, as I'm not concerned with annotating the commit message itself: `#mobile: update DATETIME`.
 
 Additionally, leveraging the automation feature in iOS Shortcuts, I pull notes every time I open my notes app, ensuring that I’m ready to modify notes without remote conflict.
 
@@ -35,7 +35,7 @@ This workflow depends on [iOS Shortcuts](https://apps.apple.com/us/app/shortcuts
 
 Additionally, we’ll use app-enabled functionality within shortcuts to pull this off, so we'll have several **pre-requisite** apps:
 
-- [Actions App](https://sindresorhus.com/actions)
+- [Actions App](https://sindresorhus.com/actions): additional actions for the Shortcuts app
 - [Working Copy](https://apps.apple.com/us/app/git-client-working-copy/id896694807): a mobile git client
 
 Install those and then let's look at the shortcuts themselves.
@@ -64,11 +64,11 @@ Lastly, this shortcut bundles your modified files into a single commit and pushe
 ### Silence Notifications
 You can *conditionally* silence notifications for these shortcuts by passing in a dictionary with `notifications` set to `false`, like below.
 
-By default, notifications are enabled.
+Notifications are enabled by default.
 
 Here’s an example of my “Open App” automation:
 
-[image here]
+![Suppress Notifications](notifications.jpg)
 
 I didn’t want the notification popping up every time, so I added this override.
 
