@@ -23,16 +23,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - CLAUDE.md
 
 # Include files
 include:
   - .well-known
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /:year/:month/:day/:title/
 
 # Defaults
 defaults:
