@@ -44,11 +44,15 @@ Install those and then let's look at the shortcuts themselves.
 I have **two** iOS Shortcuts that make this tick seamlessly:
 
 ### Pull Notes
+*[iCloud download](https://www.icloud.com/shortcuts/b1298b9af0a144e98e6bc1d1d3c1daac)*
+
 This shortcut effectively does a `git pull` on your repo. While you could open the Working Copy app to do this, doing this with a single button is rather convenient.
 
 On top of that, I’d encourage you to setup a Shortcut Automation to run this when you open your note taking app or whichever app you’ll be editing in. This ensures you won't *forget* to pull any remote changes before taking notes, avoiding merge conflicts.
 
 ### Push Note Changes
+*[iCloud download](https://www.icloud.com/shortcuts/c8383b6a5cb7474791f3f403389d86bf)*
+
 Lastly, this shortcut bundles your modified files into a single commit and pushes it to your remote repo.
 
 ## Standard Workflow
@@ -56,7 +60,19 @@ Lastly, this shortcut bundles your modified files into a single commit and pushe
 2. Make edits to your notes
 3. Run the “Push Note Changes” shortcut
 
-## Final Tip: Shortcuts Widget
+## Final Tips
+### Silence Notifications
+You can *conditionally* silence notifications for these shortcuts by passing in a dictionary with `notifications` set to `false`, like below.
+
+By default, notifications are enabled.
+
+Here’s an example of my “Open App” automation:
+
+[image here]
+
+I didn’t want the notification popping up every time, so I added this override.
+
+### Shortcuts Widget
 I like to keep my shortcuts handy on the Home Screen, so I put it in my widgets.
 
 ![Shortcut Widgets](widgets.jpg)
