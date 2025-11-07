@@ -25,7 +25,7 @@ Additionally, leveraging the automation feature in iOS Shortcuts, I pull notes e
 
 Here's a simple example of what that looks like:
 
-{% picture /assets/images/emacs-org-roam-mobile-workflow/workflow.gif --alt Workflow --img width="300" %}
+<img src="{{ '/assets/images/emacs-org-roam-mobile-workflow/workflow.gif' | relative_url}}" alt="Workflow" width="300" />
 
 Let’s breakdown this down!
 
