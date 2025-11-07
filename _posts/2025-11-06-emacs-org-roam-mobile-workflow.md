@@ -13,7 +13,7 @@ tags: [emacs, org-roam, ios-shortcuts, pkm]
 While a rich desktop experience, Emacs leaves one more than wanting on mobile, especially on iOS. Emigrating from [Obsidian](https://obsidian.md/) to Emacs, I knew that *solving* for mobile continuity was necessary, and this post reflects that solution path.
 
 # Solution Overview
-{% picture /assets/images/emacs-org-roam-mobile-workflow/workflow-diagram.png --alt Workflow Diagram %}
+{% picture emacs-org-roam-mobile-workflow/workflow-diagram.png --alt Workflow Diagram %}
 
 My workflow leverages Git as a core method for syncing state between desktop and mobile. When on desktop, I use [magit](https://github.com/magit/magit) (an Emacs git client), and [Working Copy]((https://apps.apple.com/us/app/git-client-working-copy/id896694807)), an iOS git client, on mobile.
 
@@ -25,7 +25,7 @@ Additionally, leveraging the automation feature in iOS Shortcuts, I pull notes e
 
 Here's a simple example of what that looks like:
 
-<img src="{{ '/assets/images/emacs-org-roam-mobile-workflow/workflow.gif' | relative_url}}" alt="Workflow" width="300" />
+<img src="{{ '/assets/images/emacs-org-roam-mobile-workflow/workflow.gif' | relative_url }}" alt="Workflow" width="300" />
 
 Let’s breakdown this down!
 
@@ -69,14 +69,14 @@ Notifications are enabled by default.
 
 Here's an example of my "Open App" automation:
 
-{% picture /assets/images/emacs-org-roam-mobile-workflow/notifications.jpg --alt Suppress Notifications --img width="300" %}
+{% picture emacs-org-roam-mobile-workflow/notifications.jpg --alt Suppress Notifications --img width="300" %}
 
 I didn’t want the notification popping up every time, so I added this override.
 
 ## Shortcuts Widget
 I like to keep my shortcuts handy on the Home Screen, so I put it in my widgets.
 
-{% picture /assets/images/emacs-org-roam-mobile-workflow/widgets.jpg --alt Shortcut Widgets --img width="300" %}
+{% picture emacs-org-roam-mobile-workflow/widgets.jpg --alt Shortcut Widgets --img width="300" %}
 
 This way, they're always accessible on my home screen.
 

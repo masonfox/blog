@@ -52,3 +52,7 @@ jekyll-archives:
     tag: tag
   permalinks:
     tag: '/tags/:name/'
+
+# Jekyll Picture Tag
+picture:
+  source: assets/images/

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: More Runner Ducks 🦆 
+title: More Runner Ducks 🦆
 date: 2025-11-06
 tags: [homestead, ducks]
 ---
 
 We welcomed **three** more runner ducks to the family!
 
-{% picture /assets/images/more-runner-ducks/kiki-duck.jpg --alt Kiki --img width="300" %}
+{% picture more-runner-ducks/kiki-duck.jpg --alt Kiki --img width="300" %}
 
 Welcome:
 
