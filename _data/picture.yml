@@ -1,0 +1,9 @@
+presets:
+  default:
+    widths: [400, 600, 800, 1200]
+    formats: [webp, original]
+    sizes:
+      mobile: 100vw
+      tablet: 90vw
+      desktop: 800px
+    size: 800px

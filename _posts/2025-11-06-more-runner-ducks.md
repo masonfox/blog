@@ -7,7 +7,7 @@ tags: [homestead, ducks]
 
 We welcomed **three** more runner ducks to the family!
 
-![Kiki]({{ '/assets/images/more-runner-ducks/kiki-duck.jpg' | relative_url }}){: width="300" }
+{% picture /assets/images/more-runner-ducks/kiki-duck.jpg --alt Kiki --img width="300" %}
 
 Welcome:
 
