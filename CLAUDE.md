@@ -50,7 +50,9 @@ Tags are implemented with a custom static approach:
 ### Content Organization
 - Blog posts: `_posts/YYYY-MM-DD-title.md` with front matter (layout, title, date, tags)
 - Drafts: `_drafts/YYYY-MM-DD-title.md` (not published by default)
-- Static pages: Root-level `.md` files (e.g., `about.md`)
+- Static pages: `pages/*.md` files (e.g., `pages/about.md`)
+  - Use `permalink` in front matter to control URL structure
+  - Example: `permalink: /about/` in front matter generates `/about/` URL
 - Generated site: `_site/` (git-ignored)
 
 ### Image Organization
