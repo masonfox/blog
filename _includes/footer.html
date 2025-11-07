@@ -1,6 +1,10 @@
 <footer>
   <div class="container">
-    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with Jekyll.</p>
+    <p>
+      <span>&copy; {{ 'now' | date: "%Y" }} {{ site.author }} /</span>
+      <span>Built with Jekyll /</span>
+      <span><a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a></span>
+    </p>
     <p>
       <a href="https://github.com/{{ site.social.github }}">GitHub</a> •
       <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a>

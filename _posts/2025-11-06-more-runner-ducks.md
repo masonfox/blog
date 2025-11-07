@@ -3,6 +3,7 @@ layout: post
 title: More Runner Ducks 🦆
 date: 2025-11-06
 tags: [homestead, ducks]
+description: Welcoming three new runner ducks to our homestead - Kiki, Winifred, and Satsuki join our flock of seven
 ---
 
 We welcomed **three** more runner ducks to the family!

@@ -3,6 +3,7 @@ layout: post
 title: Emacs & Org-roam iOS Mobile Workflow
 date: 2025-11-06
 tags: [emacs, org-roam, ios-shortcuts, pkm]
+description: A complete guide to syncing Emacs org-roam notes between desktop and iOS using Git, Working Copy, and iOS Shortcuts for seamless mobile note-taking
 ---
 
 **Table of Contents**
