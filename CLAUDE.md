@@ -53,6 +53,34 @@ Tags are implemented with a custom static approach:
 - Static pages: Root-level `.md` files (e.g., `about.md`)
 - Generated site: `_site/` (git-ignored)
 
+### Image Organization
+Images are organized by post in `assets/images/`:
+- Each post has its own subdirectory: `assets/images/post-slug/`
+- Keep image folder names consistent with post slugs for easy reference
+
+Example structure:
+```
+_posts/2025-11-06-my-post.md
+assets/images/my-post/
+  ├── image1.png
+  └── image2.jpg
+```
+
+**Using jekyll-picture-tag:**
+- Source directory is configured to `assets/images/` in `_config.yml`
+- Reference images without the `assets/images/` prefix:
+  ```liquid
+  {% picture post-slug/image.jpg --alt Description %}
+  ```
+- The plugin automatically generates responsive images in webp and original formats
+- Preset configurations are in `_data/picture.yml`
+
+**For regular img tags:**
+- Use the full path with Liquid filters:
+  ```liquid
+  <img src="{{ '/assets/images/post-slug/image.jpg' | relative_url }}" alt="Description">
+  ```
+
 ### Styling
 All styles are in a single file: `assets/css/style.css`
 - Gruvbox color palette defined as CSS custom properties in `:root`
