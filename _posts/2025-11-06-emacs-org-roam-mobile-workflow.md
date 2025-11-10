@@ -6,9 +6,7 @@ tags: [emacs, org-roam, ios-shortcuts, pkm]
 description: A complete guide to syncing Emacs org-roam notes between desktop and iOS using Git, Working Copy, and iOS Shortcuts for seamless mobile note-taking
 ---
 
-**Table of Contents**
-* TOC
-{:toc}
+{% include toc.md %}
 
 # The Perennial Emacs Challenge: Mobile
 While a rich desktop experience, Emacs leaves one more than wanting on mobile, especially on iOS. Emigrating from [Obsidian](https://obsidian.md/) to Emacs, I knew that *solving* for mobile continuity was necessary, and this post reflects that solution path.

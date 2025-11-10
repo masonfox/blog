@@ -6,9 +6,7 @@ tags: [homestead, ducks]
 description: Upgraded our duck run with gravel drainage and sand ground coverings and built a new duck pool
 ---
 
-**Table of Contents**
-* TOC
-{:toc}
+{% include toc.md %}
 
 # Overview
 Our duck run was a **smelly** and **muddy** mess... A haven for fly breeding and duck muck lovers, it needed a renovation! 😅
