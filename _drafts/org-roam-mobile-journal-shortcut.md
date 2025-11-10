@@ -1,0 +1,43 @@
+---
+layout: post
+title: Emacs & Org-roam mobile "New Journal Entry" Shortcut
+date: 2025-11-10
+tags: [emacs, org-roam, ios-shortcuts, journaling]
+description: 
+---
+
+{% include toc.md %}
+
+# Introduction
+When it comes to journaling, making brief updates while on the go, even if they're just appending headers without content, is a **must have** for me.
+
+Given my [emacs mobile workflow](/2025/11/06/emacs-org-roam-mobile-workflow/), this works well for editing existing journal entries, but *only* if I've already created a journal entry from [Emacs](/tags/emacs) for that day. If I'm away from my computer overnight or for the weekend, I didn't have a simple way to create a new journal entry for a given day on mobile.
+
+As with many things, I decided to solve this with [iOS Shortcuts](/tags/ios-shortcuts)! Here's a demo of what it looks like:
+
+[insert gif of shortcut]
+
+I'll walk you through what I did and even share a link that'll allow you to download the shortcut itself!
+
+# The iOS Shortcut
+🔗 Shortcut [Download]()
+
+## Shortcut Workflow
+The workflow of the shortcut is rather simple:
+
+- Pull the journal so we have the latest from the remote repo
+- Attempt to create a new note from a date picker
+- If one already exists, stop and inform you.
+- Otherwise, create a new note from a template and open it within iA Writer
+
+## Pre-requisites
+
+- [Actions App](https://sindresorhus.com/actions): additional actions for the Shortcuts app
+- [Working Copy](https://apps.apple.com/us/app/git-client-working-copy/id896694807): a mobile git client
+- [iA Writer](https://ia.net/writer) - this my note editor of choice. However, it allows us to "auto-open" our newly created note once it's created. You could swap out a different app, but you may find their shortcut support lacking. Therefore, I recommend iA Writer!
+
+## File template
+
+
+## Using it
+I keep this shortcut as a widget on my home screen so I can tap it whenever 
