@@ -66,7 +66,7 @@ Due to the pool frame, though, we needed to bore a hole though the frame. We use
 {% picture duck-run-renovation/pool-drain.jpg --alt Pool Drain --img %}
 
 ## Gravel
-After finishing the pool, we dropped the remaining gravel and sand within the run. We ended up adding 6 more bags of gravel than we'd originally planned for, as we felt we'd otherwise regret skimping on the drainage layer.
+After finishing the pool, we dropped the remaining gravel within the run. We ended up adding 6 more bags of gravel than we'd originally planned for, as we felt we'd otherwise regret skimping on the drainage layer.
 
 {% picture duck-run-renovation/gravel-base.jpeg --alt Gravel Base --img %}
 
