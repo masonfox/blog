@@ -8,6 +8,7 @@ description: A quick guide to making Org-roam wiki links effortless on iOS using
 
 {% include toc.md %}
 
+# Problem
 Org-roam’s [completion at point](https://www.orgroam.com/manual.html#Completion) functionality is fantastic in Emacs, offering a swift and seamless alternative to the note insert binding and buffer.
 
 I frequently utilize this feature while journaling, especially when jotting down notes about people in my life.
@@ -40,7 +41,4 @@ Therefore, whenever I want to refer to my wife’s note, it’s a fluent `//chlo
 I hope this helps! 👏 
 
 ---
-Annotations: 0,1903 SHA-256 499788d996ec0c533ad6  
-&Writing Tools: 204 331,9 344 349,31 435,78 543 607,9 639,8 659,6 700,13 728 780,19 865,35 908 910 912,7 939,30 1011,9 1280,8 1494,8 1518,12 1568,8 1591,5 1787 1831  
-@: 49 210 231 920,10 1061,2 1092,55 1173,24 1215,65 1288,56 1394,100 1502,16 1530,38 1576,15 1596,106 1752,35 1788,43 1832,71  
 ...
