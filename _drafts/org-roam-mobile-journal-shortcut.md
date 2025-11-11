@@ -2,7 +2,7 @@
 layout: post
 title: Emacs & Org-roam mobile "New Journal Entry" Shortcut
 date: 2025-11-10
-tags: [emacs, org-roam, ios-shortcuts, journaling]
+tags: [org-roam, ios-shortcuts, journaling]
 description: 
 ---
 
