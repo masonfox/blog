@@ -14,7 +14,7 @@ Org-roam’s [completion at point](https://www.orgroam.com/manual.html#Completio
 I frequently utilize this feature while journaling, especially when jotting down notes about people in my life.
 > [[id:{UUID}][Chloe]] and I went on a walk...
 
-However, this approach is cumbersome on mobile devices. I don’t remember the UUID, and even if I did, it’s quite tedious to type out.
+However, this approach is cumbersome on mobile devices. I don’t remember the UUID, and even if I did, the org wiki link itself - `[[link][text]]` - is tedious to type out on mobile.
 
 While I could replace those note IDs with something more convenient and memorable, typing the wiki links themselves remains cumbersome.
 
