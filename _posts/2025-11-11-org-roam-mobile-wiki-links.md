@@ -39,6 +39,3 @@ In my “Chloe” example above, the configuration is:
 Therefore, whenever I want to refer to my wife’s note, it’s a fluent `//chloe` and I continue writing.
 
 I hope this helps! 👏 
-
----
-...
