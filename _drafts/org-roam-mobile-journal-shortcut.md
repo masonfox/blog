@@ -34,10 +34,22 @@ The workflow of the shortcut is rather simple:
 
 - [Actions App](https://sindresorhus.com/actions): additional actions for the Shortcuts app
 - [Working Copy](https://apps.apple.com/us/app/git-client-working-copy/id896694807): a mobile git client
-- [iA Writer](https://ia.net/writer) - this my note editor of choice. However, it allows us to "auto-open" our newly created note once it's created. You could swap out a different app, but you may find their shortcut support lacking. Therefore, I recommend iA Writer!
+- [iA Writer](https://ia.net/writer) - this my note editor of choice. It allows us to "auto-open" our newly created note once it's created. While you could swap out a different app, you may find their shortcut support lacking. Therefore, I recommend iA Writer!
 
 ## File template
+I use a copy of my daily journal note:
 
+```
+:PROPERTIES:
+:ID: {date variable}
+:END:
+#+title: {date variable}
+#+filetags: :journal:daily:
+
+* 
+```
+
+... date formatting
 
 ## Using it
 I keep this shortcut as a widget on my home screen so I can tap it whenever 
