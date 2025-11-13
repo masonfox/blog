@@ -20,7 +20,7 @@ As with many things, I decided to solve this with [iOS Shortcuts](/tags/ios-shor
 I'll walk you through what I did and even share a link that'll allow you to download the shortcut itself!
 
 # The iOS Shortcut
-🔗 Shortcut [Download](https://www.icloud.com/shortcuts/869aff382445463cb77c4d685b78cf67)
+🔗 iOS Shortcut [Download](https://www.icloud.com/shortcuts/869aff382445463cb77c4d685b78cf67)
 
 ## Shortcut Workflow
 The workflow of the shortcut is rather simple:
