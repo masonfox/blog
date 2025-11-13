@@ -4,8 +4,10 @@ layout: default
 
 <div class="home">
   {{ content }}
-  
+
   <h2>Recent Posts</h2>
 
   {% include post-list.html posts=site.posts show_excerpt=true empty_message="No posts yet. Check back soon!" %}
+
+  {% include newsletter.html %}
 </div>
